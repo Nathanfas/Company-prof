@@ -1,4 +1,8 @@
 $primary-color: #ffd700;
+$secondary-color: #003366;
+$header-height: 120px; /* Adjust this value to match the height of your header */
+$font-family-primary: 'Arial, sans-serif';
+$font-family-secondary: 'Helvetica Neue';
 
 @import 'animate.css';
 @import '~loaders.css/src/animations/pacman.scss';
@@ -7,6 +11,7 @@ $primary-color: #ffd700;
   font-family: 'Helvetica Neue';
   src: url('./assets/fonts/helvetica-neu.ttf') format('ttf');
 }
+
 @font-face {
   font-family: 'La Belle Aurore';
   src: url('./assets/fonts/LaBelleAurore.woff2') format('woff2');
@@ -17,17 +22,11 @@ $primary-color: #ffd700;
   src: url('./assets/fonts/CoolveticaRg-Regular.woff2') format('woff2');
 }
 
-input,
-textarea {
-  font-family: 'HeHelvetica Neue';
-}
-
-/* src/App.scss */
 html, body {
   height: 100%;
   margin: 0;
   padding: 0;
-  font-family: Arial, sans-serif;
+  font-family: $font-family-primary;
 }
 
 .App {
@@ -41,4 +40,10 @@ html, body {
   flex: 1; /* Allow content to grow and push footer to bottom */
   display: flex; /* Ensure it stretches */
   flex-direction: column;
+  margin-top: $header-height; /* Account for the height of the header */
+}
+
+input,
+textarea {
+  font-family: $font-family-secondary;
 }

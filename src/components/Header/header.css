@@ -3,10 +3,10 @@
   width: 100%;
   background-color: #f8f9fa; /* Adjust the background color to match your design */
   padding: 10px 0;
-  position: sticky;
+  position: fixed; /* Changed from sticky to fixed */
   top: 0;
-  z-index: 1; /* Ensure it stays on top */
-  /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); Optional: adds a subtle shadow for better visibility */
+  z-index: 1000; /* Increased z-index to ensure it stays on top */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: adds a subtle shadow for better visibility */
 }
 
 .navbar {
@@ -63,4 +63,48 @@
 
 .logo img {
   height: 70px; /* Adjust the height as needed */
+}
+
+/* Hamburger Menu */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.menu-toggle .bar {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 4px 0;
+  transition: 0.4s;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 60px; /* Adjust based on header height */
+    left: 0;
+    background-color: #003366;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-links li {
+    margin: 0;
+  }
+
+  .nav-links li a {
+    padding: 10px 0;
+  }
+
+  .menu-toggle {
+    display: flex;
+  }
 }

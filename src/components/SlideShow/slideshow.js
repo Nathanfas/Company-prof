@@ -1,11 +1,9 @@
-// src/Slideshow.js
 import React, { useState, useEffect } from 'react';
 import './slideshow.css';
-import Slide1 from "../../assets/image/slide1.jpeg"
-import Slide2 from "../../assets/image/furniture.jpg"
-import Slide3 from "../../assets/image/Office-Copier-Buying-Guide-1024x432.webp"
-import Slide4 from "../../assets/image/offset-printing-services.jpg"
-
+import Slide1 from "../../assets/image/slide1.jpeg";
+import Slide2 from "../../assets/image/furniture.jpg";
+import Slide3 from "../../assets/image/Office-Copier-Buying-Guide-1024x432.webp";
+import Slide4 from "../../assets/image/offset-printing-services.jpg";
 
 const slides = [Slide1, Slide2, Slide3, Slide4]; // Replace with your own images
 
@@ -15,7 +13,7 @@ const Slideshow = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % slides.length);
-    }, 5000); // Change image every 10 seconds
+    }, 5000); // Change image every 5 seconds
     return () => clearInterval(interval);
   }, []);
 

@@ -8,13 +8,13 @@
 .about-section {
     margin: 40px 0;
     opacity: 0;
-    transform: translateX(-50px);
+    transform: translateY(50px); /* Updated initial transform to translateY */
     transition: opacity 1s, transform 1s;
 }
 
 .about-section.in-view {
     opacity: 1;
-    transform: translateX(0);
+    transform: translateY(0); /* Updated transform for in-view state */
 }
 
 .about-content {
@@ -26,39 +26,39 @@
 }
 
 .about-text {
-    font-size: 1.2rem;
+    font-size: 1.6rem; /* Increased font size */
     color: #003366; /* Consistent color with the theme */
     text-align: left;
     max-width: 600px;
     opacity: 0;
-    transform: translateX(-50px);
+    transform: translateY(50px); /* Updated initial transform to translateY */
     transition: opacity 1s ease-in-out 0.5s, transform 1s ease-in-out 0.5s; /* Delay for text */
 }
 
 .about-section.in-view .about-text {
     opacity: 1;
-    transform: translateX(0);
+    transform: translateY(0); /* Updated transform for in-view state */
 }
 
 .about-image {
-    max-width: 200px;
-    max-height: 200px;
+    max-width: 350px; /* Increased max-width for larger images */
+    max-height: 350px; /* Increased max-height for larger images */
     margin: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     opacity: 0;
-    transform: translateX(50px);
+    transform: translateY(-50px); /* Updated initial transform to translateY */
     transition: opacity 1s ease-in-out 1.5s, transform 1s ease-in-out 1.5s; /* Delay for image */
 }
 
 .about-section.in-view .about-image {
     opacity: 1;
-    transform: translateX(0);
+    transform: translateY(0); /* Updated transform for in-view state */
 }
 
 .about-section h2 {
     color: #FFCC00; /* Highlight color for headings */
-    font-size: 2rem;
+    font-size: 3.5rem; /* Increased font size */
     margin-bottom: 20px;
 }
 
@@ -71,5 +71,11 @@
 
     .about-text {
         text-align: center;
+        font-size: 1.2rem; /* Adjusted font size for smaller screens */
+    }
+
+    .about-image {
+        max-width: 200px; /* Adjusted max-width for smaller screens */
+        max-height: 200px; /* Adjusted max-height for smaller screens */
     }
 }
