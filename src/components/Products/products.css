@@ -1,0 +1,44 @@
+/* src/components/Partners/partners.css */
+.partners-section {
+    padding: 50px;
+    background-color: #f4f4f4;
+}
+
+.partners-heading {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.partners-heading::after {
+    content: '';
+    display: block;
+    width: 400px;
+    height: 2px;
+    background-color: black;
+    margin: 10px auto 0;
+}
+
+.partners-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding-top: 20px;
+}
+
+.partner-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 5px; /* Reduced padding */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px; /* Adjust height */
+}
+
+.partner-logo {
+    max-width: 80%; /* Reduced max-width */
+    height: 90%;
+}

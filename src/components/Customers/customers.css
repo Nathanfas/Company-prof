@@ -1,0 +1,53 @@
+/* src/components/Customers/customers.css */
+.customers {
+  text-align: center;
+  padding: 20px;
+}
+
+.customers h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: hwb(210 0% 60%); /* Match color with the footer for consistency */
+}
+.customer-heading::after{
+    content: '';
+    display: block;
+    width: 400px;
+    height: 2px;
+    background-color: black;
+    margin: 10px auto 0;
+}
+
+.customers-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.customer-card {
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 10px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.customer-card:hover {
+  transform: scale(1.05);
+  background-color: #ffcc00; /* Change background color on hover */
+}
+
+.customer-logo {
+  max-width: 200px; /* Adjust as needed */
+  max-height: 200px; /* Adjust as needed */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .customers-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+}

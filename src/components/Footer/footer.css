@@ -1,0 +1,72 @@
+/* src/Footer.css */
+.footer {
+  background-color: #003366;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1000px; /* Adjust as needed */
+  margin: 0 auto;
+}
+
+.footer-section {
+  flex: 1;
+  padding: 10px;
+  min-width: 200px;
+}
+
+.footer-logo {
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+h3 {
+  color: #FFCC00;
+  font-size: 2rem;
+}
+
+p {
+  margin: 0;
+  line-height: 1.5;
+  font-size: 1.5rem;
+  font-weight: 100;
+}
+
+a {
+  color: #FFCC00;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.footer-copyright {
+  margin-top: 20px;
+  border-top: 1px solid #FFCC00;
+  padding-top: 10px;
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    text-align: left;
+  }
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensure the app takes up at least the full viewport height */
+}
+
+.container-wraper {
+  flex: 1; /* Allow content to grow and push footer to bottom */
+}

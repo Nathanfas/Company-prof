@@ -1,0 +1,66 @@
+/* src/Header.css */
+.header {
+  width: 100%;
+  background-color: #f8f9fa; /* Adjust the background color to match your design */
+  padding: 10px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1; /* Ensure it stays on top */
+  /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); Optional: adds a subtle shadow for better visibility */
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #003366;
+  padding: 1em;
+  font-size: 140%;
+}
+
+.nav-links {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.nav-links li {
+  position: relative;
+  margin: 0 15px;
+}
+
+.nav-links li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 1px;
+  text-decoration: none;
+  position: relative;
+}
+
+.navbar li a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  display: block;
+  margin-top: 5px;
+  left: 0;
+  background: #f7f300;
+  transition: width 0.4s ease, left 0.4s ease;
+}
+
+.navbar li a:hover::after {
+  width: 100%;
+  right: 0;
+}
+
+.header-image img {
+  width: 100%;
+  height: auto;
+}
+
+.logo img {
+  height: 70px; /* Adjust the height as needed */
+}
