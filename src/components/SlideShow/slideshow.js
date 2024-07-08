@@ -3,7 +3,7 @@ import './slideshow.css';
 import Slide1 from "../../assets/image/slide1.jpeg";
 import Slide2 from "../../assets/image/furniture.jpg";
 import Slide3 from "../../assets/image/Office-Copier-Buying-Guide-1024x432.webp";
-import Slide4 from "../../assets/image/offset-printing-services.jpg";
+import Slide4 from "../../assets/image/Slide5.jpeg";
 
 const slides = [Slide1, Slide2, Slide3, Slide4]; // Replace with your own images
 
