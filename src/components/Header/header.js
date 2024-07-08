@@ -16,7 +16,7 @@ const Header = () => {
                     <a href='/'> <img src={LogoIMG} alt="Logo" /></a>
                 </div>
                 <div className={`nav-links ${isMenuOpen ? 'active' : ''}`}>
-                    <li><a href="#home">Home</a></li>
+                    <li><a href="/">Home</a></li>
                     <li><a href="#services">Services</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#products">Products</a></li>
